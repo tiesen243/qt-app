@@ -14,7 +14,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
     timer = new QTimer(this);
-    timer->setInterval(500);
+    timer->setInterval(1000);
     connect(timer, SIGNAL(timeout()), this, SLOT(timer_timeout()));
     timer->start();
 }
@@ -89,37 +89,3 @@ void MainWindow::timer_timeout()  {
         break;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
